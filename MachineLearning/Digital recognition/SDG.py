@@ -132,11 +132,3 @@ def sigmoid(z):
 def sigmoid_prime(z):
     """sigmoid函数的导数"""
     return sigmoid(z)*(1-sigmoid(z))
-
-def debug(dbg):
-    try:
-        f = open('debug.txt','a+')
-        print(dbg,file=f,end='')
-        print('\n------------------------------',file = f)
-    finally:
-        if f: f.close()
